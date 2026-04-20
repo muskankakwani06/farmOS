@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="weather.css" />
+
+  <title>Weather Check System</title>
+</head>
+
+<body>
+  <div class="box weather-box">
+
+    <div class="left general-data">
+      <div class="main">
+        <input type="text" id="cityInput" placeholder="Enter a city (by default, New Delhi)">
+        <br />
+        <button id="search">Search</button>
+      </div>
+      <div class="general">
+        <h3 id="city">City</h3>
+        <h4 id="region">Region</h4>
+        <h5 id="country">Country</h5>
+        <br />
+        <br />
+        <h6 id="description">mostly ---</h6>
+        <p id="temperature">40</p>
+        <!-- image is added in "p" dynamically -->
+      </div>
+    </div>
+
+    <div class="right predictions-data">
+      <div class="hourly">
+        <div>
+          <p>Hourly forecast</p>
+        </div>
+        <div class="hour" id="hour">
+          <!-- cards are entered dynamically -->
+        </div>
+      </div>
+      <div class="daywise">
+        <div>
+          <p>10 days forecast</p>
+        </div>
+        <div class="day" id="day">
+          <!-- cards are entered dynamically -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h3>FarmOS</h3>
+        <p>Empowering India's Farming Future</p>
+        <div class="social-media">
+          <a href="https://github.com/muskankakwani06" target="_blank" aria-label="View our GitHub repositories">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="main.html">Dashboard</a></li>
+          <li><a href="feed-back.html">Feedback</a></li>
+          <li><a href="chat.html">AI Assistant</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="weather.html">Weather Check</a></li>
+          <li><a href="smart_loan.html">Loan Eligibility</a></li>
+          <li><a href="organic.html">Organic Farming</a></li>
+          <li><a href="shopkeeper.html">Shopkeeper Listings</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 FarmOS • Made for farmers</div>
+  </footer>
+
+  <script src="weather.js"></script>
+</body>
+
+</html>
